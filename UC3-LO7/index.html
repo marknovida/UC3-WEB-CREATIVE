@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC1 LO5</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        header{
+        background: url(/UC3-LO7/img/header-img.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+        }
+        .section{
+            padding-top :4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo">PhotoNation</a>
+                <a href=" " class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="">Photo's</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="">Photo's</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <section class="container section" id="photo's">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="/UC3-LO7/img/moon.jpg"  alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Potrait</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, distinctio! Molestias ducimus minus natus enim!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="/UC3-LO7/img/city.jpg"  alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 offset-l1 right-align">
+                <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, distinctio! Molestias ducimus minus natus enim!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="/UC3-LO7/img/nature.jpg"  alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, distinctio! Molestias ducimus minus natus enim!</p>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/UC3-LO7/img/street.jpg" class="responsive-img" alt="">
+        </div>
+    </div>
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">What I do...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic quo, aliquid exercitationem possimus ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem velit eos hic incidunt perspiciatis consectetur.</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">Photography</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, atque cumque voluptate id iusto blanditiis ullam recusandae tenetur ratione fugit?</p>
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">Editing</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, atque cumque voluptate id iusto blanditiis ullam recusandae tenetur ratione fugit?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/UC3-LO7/img/galaxy.jpg" class="responsive-img" alt="">
+        </div>
+    </div>
+    <section class="section container" id="contacy">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get in touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email"></input>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services Required.</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photograph</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Editing</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn"> Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+       $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.materialboxed').materialbox();
+          $('.parallax').parallax();
+          $('.tabs').tabs();
+          $('.datepicker').datepicker();
+         });
+    </script>
+</body>
+</html>
